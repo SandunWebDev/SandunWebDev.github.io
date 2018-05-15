@@ -1,0 +1,23 @@
+.Intro {
+  background-image: url("../../assets/introBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.Intro__particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.Intro__description {
+  color: whitesmoke;
+  text-align: center;
+}

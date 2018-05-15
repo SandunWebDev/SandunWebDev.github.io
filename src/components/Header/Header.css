@@ -1,0 +1,9 @@
+.Header {
+  display: flex;
+  justify-content: center;
+}
+
+.Header__mainmenu ul {
+  display: flex;
+  list-style-type: none;
+}
