@@ -11,7 +11,7 @@ import "./Intro.css";
 class Intro extends Component {
   render() {
     return (
-      <div className="Intro">
+      <div className="Intro" id="Intro">
         {/* <Particles className="Intro__particles" params={particleConfig} /> */}
         <div className="Intro__description">
           <h1>Hello, I'm Sandun.</h1>

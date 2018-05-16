@@ -1,9 +1,73 @@
 .Header {
   display: flex;
-  justify-content: center;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 
-.Header__mainmenu ul {
+.Header__mainmenu {
+  background: #00abb7c2;
+  border-radius: 0 0 10px 10px;
+  margin: 0 auto;
+}
+
+/* ---------------------------- Start of ".basicMenu" Styles ----------------------------
+ * These style get applied for menu in both mainmenu and mobilemenu . (Overrides are below this)
+ */
+
+.basicMenu {
   display: flex;
   list-style-type: none;
+  /* Resetting default margin and padding */
+  margin: 0;
+  padding: 0;
+}
+
+/* Resetting Anchor Tags default styles and List Styles*/
+.basicMenu li a {
+  text-decoration: none;
+  color: white;
+
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 0.2rem;
+  padding: 15px;
+  display: inline-block;
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+
+.basicMenu li a:hover {
+  background: rgb(204, 230, 133);
+}
+
+/* Styling for fontAwesome Icons */
+.basicMenu li a svg {
+  padding-right: 5px;
+}
+
+/* ---------------------------- Overriding Styles for "Header__mainmenu" ----------------------------*/
+
+/* Making first and last list item has same border radius as "Header__mainmenu" to ensure that
+  when hovering in list items it shown correctly.
+*/
+.Header__mainmenu ul li:first-child a {
+  border-radius: 0 0 0 10px;
+}
+.Header__mainmenu ul li:last-child a {
+  border-radius: 0 0 10px 0;
+}
+
+/* ---------------------------- Overriding Styles for "Header__mobilemenu" ----------------------------*/
+
+.Header__mobilemenu ul li a {
+  width: 100%;
+}
+
+/* ---------------------------- Media Quieries ----------------------------*/
+
+@media screen and (max-width: 736px) {
+  /* Hiding mainmenu, So in mobile devices only mobilemenu available. */
+  .Header__mainmenu {
+    display: none;
+  }
 }

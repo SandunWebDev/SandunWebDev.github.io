@@ -9,7 +9,7 @@ import "./Skills.css";
 class Skills extends Component {
   render() {
     return (
-      <div className="Skills">
+      <div className="Skills" id="Skills">
         <h1>Hello, I'm Sandun.</h1>
         <h2>Full Stack Developer & Designer</h2>
       </div>

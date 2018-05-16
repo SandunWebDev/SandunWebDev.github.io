@@ -21,3 +21,12 @@
   color: whitesmoke;
   text-align: center;
 }
+
+/* ---------------------------- Media Quieries ----------------------------*/
+
+@media screen and (max-width: 736px) {
+  /* Hiding Particles in mobile devices for performance issues */
+  .Intro__particles {
+    display: none;
+  }
+}
