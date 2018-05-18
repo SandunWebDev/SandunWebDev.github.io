@@ -2,11 +2,11 @@
   display: flex;
   position: absolute;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .Header__mainmenu {
-  background: #00abb7c2;
+  background: #1565c0;
   border-radius: 0 0 10px 10px;
   margin: 0 auto;
 }
@@ -26,7 +26,7 @@
 /* Resetting Anchor Tags default styles and List Styles*/
 .basicMenu li a {
   text-decoration: none;
-  color: white;
+  color: #e7e0de;
 
   font-family: "Fjalla One", sans-serif;
   letter-spacing: 0.2rem;
@@ -37,7 +37,7 @@
 }
 
 .basicMenu li a:hover {
-  background: rgb(204, 230, 133);
+  background: #ef5350;
 }
 
 /* Styling for fontAwesome Icons */

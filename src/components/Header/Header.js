@@ -75,7 +75,9 @@ class Header extends Component {
     return (
       <div className="Header">
         <div className="Header__mobilemenu">
-          <MobileMenu isOpen={mobileMenuOpen}>{basicMenu}</MobileMenu>
+          <MobileMenu animations="stack" isOpen={mobileMenuOpen}>
+            {basicMenu}
+          </MobileMenu>
         </div>
 
         <div className="Header__mainmenu">{basicMenu}</div>
