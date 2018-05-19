@@ -1,10 +1,63 @@
 .Skills {
-  background-color: red;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
+  background: #f46b45; /* fallback for old browsers */
+  background: linear-gradient(to bottom, #eea849, #f46b45);
 
+  min-height: 100vh;
+  padding: 30px;
+}
+.Skills_heading {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  letter-spacing: 3px;
+  text-shadow: 4px 3px 0px rgb(43, 40, 40), 9px 8px 0px rgba(0, 0, 0, 0.15);
+}
+/* Just a wrapper for all category cards */
+.Skills__category__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  font-family: "Titillium Web", cursive;
+  color: rgb(34, 34, 33);
+}
+/* Each category like "FrontEnd", "BackEnd", ... */
+.Skills__category {
+  flex: 1;
+  flex-basis: 200px;
+  margin: 20px;
+  border-radius: 9px;
+  box-shadow: 8px 7px 2px rgba(105, 105, 105, 0.541);
+  background: rgba(84, 155, 182, 0.7);
+}
+/* Adding little padding to every direct div (Like "category__header", "category__content", .....) 
+of "Skills__category". */
+.Skills__category > div {
+  padding: 10px;
+}
+.category__header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background: #d63737;
+  color: white;
+  border-radius: 9px 9px 0 0;
+  position: relative;
+}
+.category__header svg {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 25%;
+}
+/* Hold each skills cards for that category in here */
+.category__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background: rgba(84, 155, 182, 0.7); */
+  border-radius: 0 0 9px 9px;
 }

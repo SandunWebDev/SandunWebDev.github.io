@@ -22,7 +22,9 @@ class Intro extends Component {
     // Only scrolling if that ids available.
     if (element) {
       element.scrollIntoView({
-        behavior: "smooth"
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest"
       });
     }
   }

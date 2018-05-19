@@ -1,0 +1,40 @@
+.SkillCard {
+  display: flex;
+  flex: 1;
+  flex-basis: 150px;
+  align-items: center;
+  margin: 10px;
+}
+
+/* .SkillCard:nth-child(even) {
+  background: rgb(218, 215, 215);
+} */
+
+/* Logo */
+.SkillCard svg {
+  width: 100%;
+  max-width: 33px;
+}
+
+/* Forcing all svg path to have same fill color */
+.SkillCard svg path {
+  fill: black;
+}
+
+/* Description */
+.SkillCard span {
+  padding-left: 10px;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 736px) {
+  /* Smalling Logo Size */
+  .SkillCard svg {
+    width: 100%;
+    max-width: 25px;
+  }
+
+  .SkillCard {
+    flex-basis: 100px;
+  }
+}
