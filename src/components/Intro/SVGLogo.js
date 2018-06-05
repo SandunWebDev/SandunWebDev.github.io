@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 const SVGLogo = (
   <svg version="1.0" viewBox="0 0 300 260" className="SVGLogo">

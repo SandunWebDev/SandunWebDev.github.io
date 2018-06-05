@@ -10,6 +10,7 @@
 .SkillCard svg {
   width: 100%;
   max-width: 33px;
+  min-width: 10px;
 }
 
 /* Forcing all svg path to have same fill color */
@@ -30,7 +31,10 @@
     max-width: 25px;
   }
 
-  .SkillCard {
+  /* Use when needed in two or three rows */
+  /* .SkillCard {
     flex-basis: 100px;
-  }
+  } */
+
+
 }
