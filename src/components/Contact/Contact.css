@@ -1,0 +1,36 @@
+.Contact {
+  background: #f46b45; /* fallback for old browsers */
+  background: linear-gradient(to bottom, #eea849, #f46b45);
+
+  min-height: 100vh;
+  padding: 30px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Just a wrapper for all category cards */
+.Contact__cards__wrapper {
+  font-family: "Titillium Web", cursive;
+  color: rgb(34, 34, 33);
+  text-align: center;
+}
+
+/* Contact Description */
+.Contact h1{
+  margin-bottom: 30px;
+}
+
+/* Each Contact Link & Icon */
+.Contact a{
+  color:initial;
+  font-size: 5rem;
+  margin:20px;
+}
+
+.Contact a:hover{
+  color:red;
+}
