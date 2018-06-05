@@ -14,7 +14,7 @@ class Skills extends Component {
     console.log(skillLogos);
     return (
       <div className="Skills" id="Skills">
-        <h1 className="Skills_heading">SKILLS</h1>
+        <h1 className="section__header Skills_heading">SKILLS</h1>
         <div className="Skills__category__wrapper">
           <div className="Skills__category">
             <div className="category__header">FRONT-END</div>
