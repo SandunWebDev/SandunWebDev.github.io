@@ -14,10 +14,21 @@ import "normalize.css"; // Using Famous Noramlize.CSS to Reset CSS
 import "./App.css";
 
 class App extends Component {
+  state = {
+    visibleElement : "Intro" // Keep Track witch element is currently on view. (Get current page from Header Component)
+  };
+
+  // This function get passed into Header Compennet and from their we get current active page ID.
+  getVisibleElement(pageId){
+    this.setState({
+      visibleElement : pageId
+    })
+  }
+
   render() {
     return (
       <div className="App">
-        <Header />
+        <Header getVisibleElement={this.getVisibleElement.bind(this)}/>
         <Intro />
         <Skills />
         <Projects />

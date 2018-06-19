@@ -1,5 +1,6 @@
 /**
  * Header Component - Render the header of App.
+ * Also contain most of event lisners like arrow, swipe
  */
 
 import React, { Component } from "react";
@@ -15,6 +16,7 @@ import faAt from "@fortawesome/fontawesome-free-solid/faAt";
 
 import "./Header.css";
 import "./mobileMenu.css"; // Style for "Header__mobilemenu"
+import "../../helpers/animations.css"; // Animation Style for mobile swipes.
 
 const pageIdList = ["Intro", "Skills", "Projects", "Contact"];
 
@@ -32,16 +34,37 @@ class Header extends Component {
   }
 
   // Handle smooth scroll into given id's element
-  handleSmoothScrolling(id, disable) {
+  handleSmoothScrolling(id, disable, direction) {
+    // disable and direction property only used for mobile swipes. 
+
     const element = document.getElementById(id);
 
     // Only scrolling if that ids available.
     if (element) {
+      // Scrolling to specified element.
       element.scrollIntoView({
-        behavior: disable ? "instant" : "smooth", // If disabled property is passed then smooth scrolling is not hapening.
+        behavior: disable ? "instant" : "smooth", // If disabled property is passed then smooth scrolling is not hapening. (For Mobile Swipping)
         block: "start",
         inline: "nearest"
       });
+
+      // Applying page transitin animation in mobile page swipes.
+      if (disable) {
+        let classList = Array.from(element.classList); // Get the current class list of element
+
+        // Adding appoproate swipe directionsa nimation class 
+        if (direction === "swiperight"){
+          element.className += " fadeInLeftMobile";
+        } else {
+          element.className += " fadeInRightMobile";
+        }
+
+
+        // Removing Animation class
+        setTimeout(()=>{
+          element.className = classList.join(" ");
+        }, 1000)
+      }  
     }
   }
 
@@ -51,8 +74,10 @@ class Header extends Component {
     let visibleElement = "Intro"; // Teperorly keep track of currently visible element.
 
     elements.forEach((el)=>{ 
+      const element = document.getElementById(el);
+
       // Get top and bottom values for element
-      const rect = document.getElementById(el).getBoundingClientRect();
+      const rect = element.getBoundingClientRect();
 
       // Check if elemnet is shown more than half shown in viewport. (.5 for 50% percent) 
       const isVisible = rect.top < (window.innerHeight * .5);
@@ -65,6 +90,9 @@ class Header extends Component {
 
     // Setting currently visible element in this components state.
     this.setState({visibleElement: visibleElement});
+
+    // Passing current visible element to Root App Component.
+    this.props.getVisibleElement(visibleElement);
   }
 
   // If given element is currently on viewport return "basicMenu-active" className so That menu item stand out.
@@ -95,7 +123,7 @@ class Header extends Component {
 
     // Scrolling into intended page. If "arrow key" scrolling its smooth scrolling and if its "swipe" scrolling then instant scrolling.
     if (e.type === "swiperight" || e.type === "swipeleft" ){
-      this.handleSmoothScrolling(pageIdList[currentPageId], true);
+      this.handleSmoothScrolling(pageIdList[currentPageId], true, e.type);
     } else {
       this.handleSmoothScrolling(pageIdList[currentPageId]);
     }
@@ -109,9 +137,10 @@ class Header extends Component {
     // Event Listners for arrow keys for easy keyboard navagation.
     document.addEventListener("keyup", this.handleArrowKeyNavaigation.bind(this));
 
-    var hammertime = new HammerJS(document.body);
-hammertime.on("swiperight",this.handleArrowKeyNavaigation.bind(this));
-hammertime.on("swipeleft",this.handleArrowKeyNavaigation.bind(this));
+    // Adding HammerJS "touch" event listners to body.
+    const hammertime = new HammerJS(document.body);
+    hammertime.on("swiperight",this.handleArrowKeyNavaigation.bind(this));
+    hammertime.on("swipeleft",this.handleArrowKeyNavaigation.bind(this));
   }
 
   render() {
