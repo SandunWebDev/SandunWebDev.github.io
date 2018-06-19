@@ -8,6 +8,10 @@ import Particles from "react-particles-js";
 // Font Awesome Resources
 import FontAwesomeIcon from "@fortawesome/react-fontawesome";
 import faArrowCircleDown from "@fortawesome/fontawesome-free-solid/faArrowCircleDown";
+import faGoogle from "@fortawesome/fontawesome-free-brands/faGoogle";
+import faLinkedin from "@fortawesome/fontawesome-free-brands/faLinkedin";
+import faGithub from "@fortawesome/fontawesome-free-brands/faGithub";
+import faTwitter from "@fortawesome/fontawesome-free-brands/faTwitter";
 
 import SVGLogo from "./SVGLogo"; // Importing logo as a SVG element
 import particleConfig from "./particleConfig.json"; // Configuration JSON for "Particle" component
@@ -43,6 +47,10 @@ class Intro extends Component {
             <FontAwesomeIcon icon={faArrowCircleDown} />
           </div>
         </div>
+        <div className="Intro_contact"><a href="mailto:SandunWebDev@gmail.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGoogle} className="faIcon" /></a>
+       <a href="https://github.com/SandunWebDev" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} className="faIcon" /></a>
+       <a href="https://www.linkedin.com/in/SandunWebDev" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} className="faIcon" /></a>
+       <a href="https://twitter.com/SandunWebDev" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter} className="faIcon" /></a></div>
       </div>
     );
   }
