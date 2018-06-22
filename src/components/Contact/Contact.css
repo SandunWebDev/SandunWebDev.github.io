@@ -20,17 +20,18 @@
 }
 
 /* Contact Description */
-.Contact h1{
+.Contact h1 {
   margin-bottom: 30px;
 }
 
 /* Each Contact Link & Icon */
-.Contact a{
-  color:initial;
+.Contact a {
+  color: initial;
   font-size: 5rem;
-  margin:20px;
+  margin: 20px;
+  display: inline-block; /*For Animation Transform proprty. Because inline elements work with trasnform*/
 }
 
-.Contact a:hover{
-  color:red;
+.Contact a:hover {
+  color: red;
 }

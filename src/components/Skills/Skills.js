@@ -6,16 +6,28 @@ import React, { Component } from "react";
 
 import SkillCard from "./SkillCard/SkillCard";
 
+import { addPageAnimations } from "../../helpers/animations";
 import skillLogos from "./skillLogos";
 import "./Skills.css";
 
 class Skills extends Component {
+  // Getting reference to parentDom to apply animations.
+  SkillWrapperDomRef = React.createRef();
+
   render() {
+    // Adding animations if cuurent page is active
+    this.props.visibleElement === "Skills"
+      ? addPageAnimations(this.SkillWrapperDomRef, "Skills", "pulse")
+      : "";
+
     return (
       <div className="Skills" id="Skills">
         <h1 className="section__header Projects__header">SKILLS</h1>
-        <div className="Skills__category__wrapper" >
-          <div className="Skills__category">
+        <div
+          className="Skills__category__wrapper"
+          ref={this.SkillWrapperDomRef}
+        >
+          <div className={"Skills__category"}>
             <div className="category__header">FRONT-END</div>
             <div className="category__content">
               <SkillCard logo={skillLogos.html} title="HTML5" />
@@ -23,12 +35,17 @@ class Skills extends Component {
               <SkillCard logo={skillLogos.sass} title="SAAS" />
               <SkillCard logo={skillLogos.bootstrap} title="BOOTSTRAP" />
               <SkillCard logo={skillLogos.d3} title="D3" />
-              <SkillCard logo={skillLogos.responsive} title="RESPONSIVE DESIGN" />
+              <SkillCard
+                logo={skillLogos.responsive}
+                title="RESPONSIVE DESIGN"
+              />
               <SkillCard logo={skillLogos.js} title="JS ES6" />
               <SkillCard logo={skillLogos.jquery} title="JQUERY" />
-              <SkillCard logo={skillLogos.react} title="REACT / NATIVE / REDUX" />
+              <SkillCard
+                logo={skillLogos.react}
+                title="REACT / NATIVE / REDUX"
+              />
               <SkillCard logo={skillLogos.angular} title="ANGULAR" />
-              
             </div>
           </div>
           <div className="Skills__category">
@@ -73,7 +90,10 @@ class Skills extends Component {
           <div className="Skills__category">
             <div className="category__header">OTHER</div>
             <div className="category__content">
-              <SkillCard logo={skillLogos.iot} title="IOT / ARDUINO / RASBERRY PI / ESP" />
+              <SkillCard
+                logo={skillLogos.iot}
+                title="IOT / ARDUINO / RASBERRY PI / ESP"
+              />
               <SkillCard logo={skillLogos.c} title="C LANG." />
               <SkillCard logo={skillLogos.agile} title="AGILE / SCRUM" />
               <SkillCard logo={skillLogos.linux} title="LINUX" />
@@ -83,7 +103,7 @@ class Skills extends Component {
           </div>
         </div>
       </div>
-    );  
+    );
   }
 }
 

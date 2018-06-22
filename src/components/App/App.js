@@ -15,24 +15,29 @@ import "./App.css";
 
 class App extends Component {
   state = {
-    visibleElement : "Intro" // Keep Track witch element is currently on view. (Get current page from Header Component)
+    visibleElement: "Intro" // Keep Track witch element is currently on view. (Get current page from Header Component)
   };
 
   // This function get passed into Header Compennet and from their we get current active page ID.
-  getVisibleElement(pageId){
+  getVisibleElement(pageId) {
     this.setState({
-      visibleElement : pageId
-    })
+      visibleElement: pageId
+    });
+  }
+
+  // Very importatnt to perforamnce. Canceling component update if theres no changein state.
+  shouldComponentUpdate(nextProps, nextState) {
+    return this.state.visibleElement !== nextState.visibleElement;
   }
 
   render() {
     return (
       <div className="App">
-        <Header getVisibleElement={this.getVisibleElement.bind(this)}/>
+        <Header getVisibleElement={this.getVisibleElement.bind(this)} />
         <Intro />
-        <Skills />
-        <Projects />
-        <Contact />
+        <Skills visibleElement={this.state.visibleElement} />
+        <Projects visibleElement={this.state.visibleElement} />
+        <Contact visibleElement={this.state.visibleElement} />
       </div>
     );
   }

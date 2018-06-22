@@ -43,14 +43,43 @@ class Intro extends Component {
           <div className="Intro__logo">{SVGLogo}</div>
           <h1>Hello, I'm Sandun.</h1>
           <h2>Full Stack Developer & Designer</h2>
-          <div className="Intro__nextIcon" onClick={() => this.handleSmoothScrolling("Skills")}>
+          <div
+            className="Intro__nextIcon"
+            onClick={() => this.handleSmoothScrolling("Skills")}
+          >
             <FontAwesomeIcon icon={faArrowCircleDown} />
           </div>
         </div>
-        <div className="Intro_contact"><a href="mailto:SandunWebDev@gmail.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGoogle} className="faIcon" /></a>
-       <a href="https://github.com/SandunWebDev" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} className="faIcon" /></a>
-       <a href="https://www.linkedin.com/in/SandunWebDev" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} className="faIcon" /></a>
-       <a href="https://twitter.com/SandunWebDev" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter} className="faIcon" /></a></div>
+        <div className="Intro_contact">
+          <a
+            href="mailto:SandunWebDev@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGoogle} className="faIcon" />
+          </a>
+          <a
+            href="https://github.com/SandunWebDev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} className="faIcon" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/SandunWebDev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedin} className="faIcon" />
+          </a>
+          <a
+            href="https://twitter.com/SandunWebDev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faTwitter} className="faIcon" />
+          </a>
+        </div>
       </div>
     );
   }

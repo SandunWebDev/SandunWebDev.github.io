@@ -52,27 +52,25 @@
   letter-spacing: 1px;
 }
 
-
 /* Styles for Intros Right corner Contact Links */
-.Intro_contact{
-  display:flex;
+.Intro_contact {
+  display: flex;
   flex-direction: row;
   position: absolute;
-  right:20px;
-  top:15px;
-  z-index: 2;
+  right: 20px;
+  top: 15px;
+  z-index: 1;
 }
 
-.Intro_contact a{
-  color:white;
+.Intro_contact a {
+  color: white;
   font-size: 25px;
   margin: 0 10px;
 }
 
-.Intro_contact a:hover{
-  color:#1565c0;
+.Intro_contact a:hover {
+  color: #1565c0;
 }
-
 
 .Intro__nextIcon {
   /* background: red; */
@@ -127,22 +125,18 @@
   }
 } */
 
-
-
-
 /* ---------------------------- Media Quieries ----------------------------*/
 
 @media screen and (max-width: 900px) {
   /* Showing links top to bottm just to make sure no overlapping whilw in 900px - 736px*/
-  .Intro_contact{
+  .Intro_contact {
     flex-direction: column;
   }
 
-  .Intro_contact a{
-    margin:10px;
+  .Intro_contact a {
+    margin: 10px;
   }
 }
-
 
 @media screen and (max-width: 736px) {
   /* Hiding Particles in mobile devices for performance issues */
@@ -156,9 +150,8 @@
   }
 
   /* Moving little bit down in mobile view */
-  .Intro_contact{
-    top:30px;
+  .Intro_contact {
+    top: 30px;
     flex-direction: row;
   }
 }
-

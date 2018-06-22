@@ -12,6 +12,7 @@ import cryptoMarsThumb from "../../assets/projects/cryptoMars.png";
 import marsMapsThumb from "../../assets/projects/marsMaps.png";
 import portfolioThumb from "../../assets/projects/portfolio.png";
 
+import { addPageAnimations } from "../../helpers/animations";
 import "./Projects.css";
 
 // All My projects details. Use this info to generate each "PrjectCard".
@@ -63,11 +64,22 @@ const myProjects = [
 ];
 
 class Projects extends Component {
+  // Getting reference to parentDom to apply animations.
+  ProjectWrapperDomRef = React.createRef();
+
   render() {
+    // Adding animations if cuurent page is active
+    this.props.visibleElement === "Projects"
+      ? addPageAnimations(this.ProjectWrapperDomRef, "Projects", "pulse")
+      : "";
+
     return (
       <div className="Projects" id="Projects">
         <h1 className="section__header Projects__header">PROJECTS</h1>
-        <div className="Projects__cards__wrapper">
+        <div
+          className="Projects__cards__wrapper"
+          ref={this.ProjectWrapperDomRef}
+        >
           {/* Generating ProjectCards */}
           {myProjects.map((project, index) => {
             return <ProjectCard project={project} key={index} />;
