@@ -12,6 +12,7 @@ import faGithub from "@fortawesome/fontawesome-free-brands/faGithub";
 import faTwitter from "@fortawesome/fontawesome-free-brands/faTwitter";
 
 import { addPageAnimations } from "../../helpers/animations";
+import contactAvatar from "../../assets/contact.png";
 import "./Contact.css";
 
 class Skills extends Component {
@@ -33,11 +34,13 @@ class Skills extends Component {
             hi, Feel free to contact me through follwing mediums. I look forward
             to hearing from you.
           </h1>
+          <img src={contactAvatar} width="300" />
           <div className="Contact__Icons" ref={this.ContactWrapperDomRef}>
             <a
               href="mailto:SandunWebDev@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
+              title="GMail"
             >
               <FontAwesomeIcon icon={faGoogle} className="faIcon" />
             </a>
@@ -45,6 +48,7 @@ class Skills extends Component {
               href="https://github.com/SandunWebDev"
               target="_blank"
               rel="noopener noreferrer"
+              title="GitHub"
             >
               <FontAwesomeIcon icon={faGithub} className="faIcon" />
             </a>
@@ -52,6 +56,7 @@ class Skills extends Component {
               href="https://www.linkedin.com/in/SandunWebDev"
               target="_blank"
               rel="noopener noreferrer"
+              title="LinkdIn"
             >
               <FontAwesomeIcon icon={faLinkedin} className="faIcon" />
             </a>
@@ -59,6 +64,7 @@ class Skills extends Component {
               href="https://twitter.com/SandunWebDev"
               target="_blank"
               rel="noopener noreferrer"
+              title="Twitter"
             >
               <FontAwesomeIcon icon={faTwitter} className="faIcon" />
             </a>

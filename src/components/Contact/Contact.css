@@ -19,19 +19,21 @@
   text-align: center;
 }
 
-/* Contact Description */
-.Contact h1 {
-  margin-bottom: 30px;
+.Contact__Icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 
 /* Each Contact Link & Icon */
 .Contact a {
-  color: initial;
-  font-size: 5rem;
-  margin: 20px;
-  display: inline-block; /*For Animation Transform proprty. Because inline elements work with trasnform*/
+  color: rgb(252, 216, 209);
+  font-size: 3rem;
+  margin: 15px;
+  flex: 0 1;
 }
 
 .Contact a:hover {
-  color: red;
+  color: rgb(140, 101, 245);
 }

@@ -55,6 +55,7 @@ class Intro extends Component {
             href="mailto:SandunWebDev@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
+            title="GMail"
           >
             <FontAwesomeIcon icon={faGoogle} className="faIcon" />
           </a>
@@ -62,6 +63,7 @@ class Intro extends Component {
             href="https://github.com/SandunWebDev"
             target="_blank"
             rel="noopener noreferrer"
+            title="GitHub"
           >
             <FontAwesomeIcon icon={faGithub} className="faIcon" />
           </a>
@@ -69,6 +71,7 @@ class Intro extends Component {
             href="https://www.linkedin.com/in/SandunWebDev"
             target="_blank"
             rel="noopener noreferrer"
+            title="LinkedIn"
           >
             <FontAwesomeIcon icon={faLinkedin} className="faIcon" />
           </a>
@@ -76,6 +79,7 @@ class Intro extends Component {
             href="https://twitter.com/SandunWebDev"
             target="_blank"
             rel="noopener noreferrer"
+            title="Twitter"
           >
             <FontAwesomeIcon icon={faTwitter} className="faIcon" />
           </a>
