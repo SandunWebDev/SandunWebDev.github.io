@@ -39,23 +39,24 @@
 }
 
 .basicMenu li a:hover {
-  background: #ef5350;
+  /* background: #ef5350; */
+  background: #00d3ad;
+  color: black;
 }
 
 /* Small Arrow Style for active page */
-.basicMenu-active:after{
-  content:" ";
+.basicMenu-active:after {
+  content: " ";
   position: absolute;
-  margin:0 auto;
-  bottom:0;
-  right:0;
+  margin: 0 auto;
+  bottom: 0;
+  right: 0;
   /* Render Arrow using boders */
   border-style: solid;
   border-width: 0 0 18px 18px;
-  border-color: transparent transparent rgb(230, 152, 50) transparent;
+  border-color: transparent transparent #ffeeca transparent;
   z-index: -1;
 }
-
 
 /* Styling for fontAwesome Icons */
 .basicMenu li a svg {

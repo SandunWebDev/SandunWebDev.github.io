@@ -1,7 +1,6 @@
 .Contact {
   background: #f46b45; /* fallback for old browsers */
   background: linear-gradient(to bottom, #eea849, #f46b45);
-
   min-height: 100vh;
   padding: 30px;
 

@@ -1,13 +1,11 @@
 .Skills {
   background: #f46b45; /* fallback for old browsers */
-  background: linear-gradient(to bottom, #eea849, #f46b45);
-  background: url("../../assets//trianglify.png");
-  background-size: cover;
-
+  background: url("../../assets/skills_background.png") right top no-repeat,
+    linear-gradient(to bottom, #eea849, #f46b45);
+  background-size: auto, auto;
   min-height: 100vh;
   padding: 30px;
 }
-
 /* Just a wrapper for all category cards */
 .Skills__category__wrapper {
   display: flex;
@@ -23,7 +21,10 @@
   margin: 20px;
   border-radius: 9px;
   box-shadow: 8px 7px 2px rgba(105, 105, 105, 0.541);
-  background: rgba(84, 155, 182, 0.7);
+  background: url("../../assets/skill_card_background.png") right bottom
+      no-repeat,
+    #ffeacfc9;
+  background-size: auto 200px;
 }
 /* Adding little padding to every direct div (Like "category__header", "category__content", .....) 
 of "Skills__category". */
@@ -31,10 +32,10 @@ of "Skills__category". */
   padding: 10px;
 }
 .category__header {
+  letter-spacing: 1px;
   font-size: 1.5rem;
-  font-weight: bold;
   text-align: center;
-  background: #d63737;
+  background: #2f4858;
   color: white;
   border-radius: 9px 9px 0 0;
   position: relative;

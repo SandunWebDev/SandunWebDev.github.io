@@ -37,22 +37,33 @@ class Header extends Component {
   handleSmoothScrolling(id, disable, direction) {
     // disable and direction property only used for mobile swipes.
 
+    // This check cuurent browser is mobile or not. We use this to disable smooth scroling so Its pweromant in mobile phones.
+    let mobile = false;
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      console.log("Mobile");
+      disable = true;
+    }
+
     const element = document.getElementById(id);
 
     // Only scrolling if that ids available.
     if (element) {
       // Scrolling to specified element.
       element.scrollIntoView({
-        behavior: disable ? "instant" : "smooth", // If disabled property is passed then smooth scrolling is not hapening. (For Mobile Swipping)
+        behavior: disable || mobile ? "instant" : "smooth", // If disabled property is passed then smooth scrolling is not hapening. (For Mobile Swipping)
         block: "start",
         inline: "nearest"
       });
 
       // Applying page transitin animation in mobile page swipes.
-      if (disable) {
+      if (disable || mobile) {
         let classList = Array.from(element.classList); // Get the current class list of element
 
-        // Adding appoproate swipe directionsa nimation class
+        // Adding appoproate swipe directions animation class
         if (direction === "swiperight") {
           element.className += " fadeInLeftMobile";
         } else {

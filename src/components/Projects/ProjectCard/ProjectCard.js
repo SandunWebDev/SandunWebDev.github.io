@@ -15,16 +15,26 @@ import "./ProjectCard.css";
 
 class ProjectCard extends Component {
   render() {
-    const { image, heading, labels, description, liveLink, codeLink } = this.props.project;
+    const {
+      image,
+      heading,
+      labels,
+      description,
+      liveLink,
+      codeLink
+    } = this.props.project;
 
     return (
       <div className="ProjectCard">
         <div className="ProjectCard__image">
           <img src={image} alt="" className="s8" />
         </div>
-        {/* Generating Label for each */}
-        <div className="ProjectCard__labels">{labels.map((label, index) => <div key={index}>{label}</div>)}</div>
+
         <div className="ProjectCard__heading">{heading}</div>
+        {/* Generating Label for each */}
+        <div className="ProjectCard__labels">
+          {labels.map((label, index) => <div key={index}>{label}</div>)}
+        </div>
         {/* <div className="ProjectCard__description">
           <p>{description}</p>
         </div> */}
