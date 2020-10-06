@@ -1,96 +1,100 @@
 .ProjectCard {
-  flex: 1 1 450px;
-  max-width: 1000px;
-  box-shadow: 0 15px 10px -6px #777;
-  border-radius: 8px;
-  margin: 20px 20px;
-  background: #e0e3e6;
-  position: relative; /*As a reference for buttons*/
+	flex: 1 1 450px;
+	max-width: 1000px;
+	box-shadow: 0 15px 10px -6px #777;
+	border-radius: 8px;
+	margin: 20px 20px;
+	background: #e0e3e6;
+	position: relative; /*As a reference for buttons*/
+}
+
+.ProjectCard-hidden {
+	visibility: hidden;
 }
 
 /* Making image is reponsive */
 .ProjectCard__image img {
-  max-width: 100%;
-  border-radius: 4px 4px 0 0;
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
-    0 5px 15px 0 rgba(0, 0, 0, 0.08);
+	max-width: 100%;
+	border-radius: 4px 4px 0 0;
+	box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
+		0 5px 15px 0 rgba(0, 0, 0, 0.08);
 }
 
 /* Wrapper div of all labels */
 .ProjectCard__labels {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  font-size: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	font-size: 1rem;
 }
 
 /* Styles for individual label */
 .ProjectCard__labels > div {
-  font-size: 10px;
-  font-weight: bold;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
-  background: #394855;
-  margin: 0 5px 5px 0;
-  padding: 5px 10px;
-  border-radius: 4px;
-  text-transform: uppercase;
+	font-size: 10px;
+	font-weight: bold;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+	background: #394855;
+	margin: 0 5px 5px 0;
+	padding: 5px 10px;
+	border-radius: 4px;
+	text-transform: uppercase;
 }
 
 .ProjectCard__heading {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .ProjectCard__description {
-  text-indent: 20px;
-  text-align: justify;
+	text-indent: 20px;
+	text-align: justify;
 }
 
 .ProjectCard__labels,
 .ProjectCard__heading {
-  padding: 10px 10px;
+	padding: 10px 10px;
 }
 
 /* Container for bottom button */
 .ProjectCard__buttons {
-  display: none;
+	display: none;
 }
 
 /* Only showing button when on hovered */
 .ProjectCard:hover .ProjectCard__buttons {
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0 !important; /*Override default margin of each div in ProjectCard*/
-  background: rgba(31, 28, 28, 0.799);
-  border-radius: 4px 4px 8px 8px;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0 !important; /*Override default margin of each div in ProjectCard*/
+	background: rgba(31, 28, 28, 0.799);
+	border-radius: 4px 4px 8px 8px;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Individual buttons */
 .ProjectCard__buttons > a {
-  border: 1px solid white;
-  border-radius: 4px;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 10px;
-  margin: 10px;
+	border: 1px solid white;
+	border-radius: 4px;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	font-size: 1.5rem;
+	padding: 10px;
+	margin: 10px;
 }
 
 .ProjectCard__buttons > a:hover {
-  /* background: rgb(153, 64, 64); */
-  background: #00d3ad;
-  color: black;
+	/* background: rgb(153, 64, 64); */
+	background: #00d3ad;
+	color: black;
 }
 
 /* Buttons Icon */
 .ProjectCard__buttons svg {
-  padding-right: 5px;
+	padding-right: 5px;
 }

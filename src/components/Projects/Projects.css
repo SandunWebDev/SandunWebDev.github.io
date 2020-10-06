@@ -1,17 +1,23 @@
 .Projects {
-  background: #4ca1af; /* fallback for old browsers */
-  background: url("../../assets/projects_background.png") left top no-repeat,
-    linear-gradient(to bottom, #33bbff, #3a7bd5);
-  background-size: auto;
-  padding: 30px;
-  min-height: 100vh;
+	background: #4ca1af; /* fallback for old browsers */
+	background: url('../../assets/projects_background.png') left top no-repeat,
+		linear-gradient(to bottom, #33bbff, #3a7bd5);
+	background-size: auto;
+	padding: 30px;
+	min-height: 100vh;
 }
 
 /* Just a wrapper for all category cards */
 .Projects__cards__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  font-family: "Titillium Web", cursive;
-  color: rgb(34, 34, 33);
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content: space-around; */
+	justify-content: flex-start;
+	font-family: 'Titillium Web', cursive;
+	color: rgb(34, 34, 33);
 }
+
+/* .Projects__cards__wrapper::after {
+	content: '';
+	flex: auto;
+} */
