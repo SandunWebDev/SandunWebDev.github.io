@@ -8,8 +8,8 @@ import React, { Component } from "react";
 
 // Font Awesome Resources
 import FontAwesomeIcon from "@fortawesome/react-fontawesome";
-import faGlobe from "@fortawesome/fontawesome-free-solid/faGlobe";
-import faFileCode from "@fortawesome/fontawesome-free-solid/faFileCode";
+import faCloud from "@fortawesome/fontawesome-free-solid/faCloud";
+import faCodeBranch from "@fortawesome/fontawesome-free-solid/faCodeBranch";
 
 import "./ProjectCard.css";
 
@@ -29,6 +29,40 @@ class ProjectCard extends Component {
 			<div className={`ProjectCard ${hidden ? "ProjectCard-hidden" : ""}`}>
 				<div className="ProjectCard__image">
 					<img src={image} alt="" className="s8" />
+
+					<div className="ProjectCard__Hoover">
+						<div>
+							<div className="ProjectCard__description">{description}</div>
+							<div className="ProjectCard__buttons">
+								<div title={`${liveLink === "#" ? "You are on it. 😊" : ""}`}>
+									<a
+										href={liveLink}
+										target="_blank"
+										className={`${
+											liveLink === "#" ? "ProjectCard__buttons--disabled" : ""
+										}`}
+									>
+										<FontAwesomeIcon icon={faCloud} className="faIcon" />
+										LIVE
+									</a>
+								</div>
+								<div
+									title={`${codeLink === "#" ? "Sorry. 😟 Private Code." : ""}`}
+								>
+									<a
+										href={codeLink}
+										target="_blank"
+										className={`${
+											codeLink === "#" ? "ProjectCard__buttons--disabled" : ""
+										}`}
+									>
+										<FontAwesomeIcon icon={faCodeBranch} className="faIcon" />
+										CODE
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div className="ProjectCard__heading">{heading}</div>
@@ -37,19 +71,7 @@ class ProjectCard extends Component {
 					{labels.map((label, index) => (
 						<div key={index}>{label}</div>
 					))}
-				</div>
-				{/* <div className="ProjectCard__description">
-          <p>{description}</p>
-        </div> */}
-				<div className="ProjectCard__buttons">
-					<a href={liveLink} target="_blank">
-						<FontAwesomeIcon icon={faGlobe} className="faIcon" />
-						LIVE
-					</a>
-					<a href={codeLink} target="_blank">
-						<FontAwesomeIcon icon={faFileCode} className="faIcon" />
-						CODE
-					</a>
+					<div>...</div>
 				</div>
 			</div>
 		);
