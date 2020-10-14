@@ -1,14 +1,14 @@
 .Header {
-  display: flex;
-  position: fixed;
-  width: 100%;
-  z-index: 2;
+	display: flex;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
 }
 
 .Header__mainmenu {
-  background: #1565c0;
-  border-radius: 0 0 10px 10px;
-  margin: 0 auto;
+	background: #1565c0;
+	border-radius: 0 0 10px 10px;
+	margin: 0 auto;
 }
 
 /* ---------------------------- Start of ".basicMenu" Styles ----------------------------
@@ -16,51 +16,51 @@
  */
 
 .basicMenu {
-  display: flex;
-  list-style-type: none;
-  /* Resetting default margin and padding */
-  margin: 0;
-  padding: 0;
+	display: flex;
+	list-style-type: none;
+	/* Resetting default margin and padding */
+	margin: 0;
+	padding: 0;
 }
 
 /* Resetting Anchor Tags default styles and List Styles*/
 .basicMenu li a {
-  text-decoration: none;
-  color: #e7e0de;
+	text-decoration: none;
+	color: #e7e0de;
 
-  font-family: "Fjalla One", sans-serif;
-  letter-spacing: 0.2rem;
-  padding: 15px;
-  display: inline-block;
-  transition: all 500ms ease;
-  cursor: pointer;
-  position: relative;
-  z-index: 1;
+	font-family: "Fjalla One", sans-serif;
+	letter-spacing: 0.2rem;
+	padding: 15px;
+	display: inline-block;
+	transition: all 500ms ease;
+	cursor: pointer;
+	position: relative;
+	z-index: 1;
 }
 
 .basicMenu li a:hover {
-  /* background: #ef5350; */
-  background: #00d3ad;
-  color: black;
+	/* background: #ef5350; */
+	background: #00d3ad;
+	color: black;
 }
 
 /* Small Arrow Style for active page */
 .basicMenu-active:after {
-  content: " ";
-  position: absolute;
-  margin: 0 auto;
-  bottom: 0;
-  right: 0;
-  /* Render Arrow using boders */
-  border-style: solid;
-  border-width: 0 0 18px 18px;
-  border-color: transparent transparent #ffeeca transparent;
-  z-index: -1;
+	content: " ";
+	position: absolute;
+	margin: 0 auto;
+	bottom: 0;
+	right: 0;
+	/* Render Arrow using boders */
+	border-style: solid;
+	border-width: 0 0 18px 18px;
+	border-color: transparent transparent #ffeeca transparent;
+	z-index: -1;
 }
 
 /* Styling for fontAwesome Icons */
 .basicMenu li a svg {
-  padding-right: 5px;
+	padding-right: 5px;
 }
 
 /* ---------------------------- Overriding Styles for "Header__mainmenu" ----------------------------*/
@@ -69,23 +69,30 @@
   when hovering in list items it shown correctly.
 */
 .Header__mainmenu ul li:first-child a {
-  border-radius: 0 0 0 10px;
+	border-radius: 0 0 0 10px;
 }
 .Header__mainmenu ul li:last-child a {
-  border-radius: 0 0 10px 0;
+	border-radius: 0 0 10px 0;
 }
 
 /* ---------------------------- Overriding Styles for "Header__mobilemenu" ----------------------------*/
 
 .Header__mobilemenu ul li a {
-  width: 100%;
+	width: 100%;
 }
 
 /* ---------------------------- Media Quieries ----------------------------*/
 
 @media screen and (max-width: 736px) {
-  /* Hiding mainmenu, So in mobile devices only mobilemenu available. */
-  .Header__mainmenu {
-    display: none;
-  }
+	/* Hiding mainmenu, So in mobile devices only mobilemenu available. */
+	.Header__mainmenu {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 736px) {
+	/* Hiding mobilemenu, So in large devices only mainmenu available. */
+	.Header__mobilemenu {
+		display: none;
+	}
 }

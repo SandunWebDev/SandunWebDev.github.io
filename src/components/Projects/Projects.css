@@ -1,7 +1,9 @@
 .Projects {
 	background: #4ca1af; /* fallback for old browsers */
-	background: url('../../assets/projects_background.png') left top no-repeat,
-		linear-gradient(to bottom, #33bbff, #3a7bd5);
+	background: url("../../assets/projects_background.png") left top no-repeat,
+		/* linear-gradient(to bottom, #33bbff, #3a7bd5); */
+			linear-gradient(to top, #e96384 0%, #ffb199 100%);
+
 	background-size: auto;
 	padding: 30px;
 	min-height: 100vh;
@@ -13,7 +15,7 @@
 	flex-wrap: wrap;
 	/* justify-content: space-around; */
 	justify-content: flex-start;
-	font-family: 'Titillium Web', cursive;
+	font-family: "Titillium Web", cursive;
 	color: rgb(34, 34, 33);
 }
 

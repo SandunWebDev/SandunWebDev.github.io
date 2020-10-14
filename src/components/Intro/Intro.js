@@ -19,74 +19,74 @@ import particleConfig from "./particleConfig.json"; // Configuration JSON for "P
 import "./Intro.css";
 
 class Intro extends Component {
-  // Handle smooth scroll into given id's element
-  handleSmoothScrolling(id) {
-    const element = document.getElementById(id);
+	// Handle smooth scroll into given id's element
+	handleSmoothScrolling(id) {
+		const element = document.getElementById(id);
 
-    // Only scrolling if that ids available.
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest"
-      });
-    }
-  }
+		// Only scrolling if that ids available.
+		if (element) {
+			element.scrollIntoView({
+				behavior: "smooth",
+				block: "start",
+				inline: "nearest",
+			});
+		}
+	}
 
-  render() {
-    return (
-      <div className="Intro" id="Intro">
-        {/* Just a wrapper layer to blend background image */}
-        <Particles className="Intro__particles" params={particleConfig} />
-        <div className="Intro_wrapperLayer" />
-        <div className="Intro__description">
-          <div className="Intro__logo">{SVGLogo}</div>
-          <h1>Hello, I'm Sandun.</h1>
-          <h2>Full Stack Developer & Designer</h2>
-          <div
-            className="Intro__nextIcon"
-            onClick={() => this.handleSmoothScrolling("Skills")}
-          >
-            <FontAwesomeIcon icon={faArrowCircleDown} />
-          </div>
-        </div>
-        <div className="Intro_contact">
-          <a
-            href="mailto:SandunWebDev@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="GMail"
-          >
-            <FontAwesomeIcon icon={faGoogle} className="faIcon" />
-          </a>
-          <a
-            href="https://github.com/SandunWebDev"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="GitHub"
-          >
-            <FontAwesomeIcon icon={faGithub} className="faIcon" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/SandunWebDev"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="LinkedIn"
-          >
-            <FontAwesomeIcon icon={faLinkedin} className="faIcon" />
-          </a>
-          <a
-            href="https://twitter.com/SandunWebDev"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Twitter"
-          >
-            <FontAwesomeIcon icon={faTwitter} className="faIcon" />
-          </a>
-        </div>
-      </div>
-    );
-  }
+	render() {
+		return (
+			<div className="Intro" id="Intro">
+				{/* Just a wrapper layer to blend background image */}
+				<Particles className="Intro__particles" params={particleConfig} />
+				<div className="Intro_wrapperLayer" />
+				<div className="Intro__description">
+					<div className="Intro__logo">{SVGLogo}</div>
+					<h1>Hello, I'm Sandun.</h1>
+					<h2>Full Stack Developer & Designer</h2>
+					<div
+						className="Intro__nextIcon"
+						onClick={() => this.handleSmoothScrolling("Skills")}
+					>
+						<FontAwesomeIcon icon={faArrowCircleDown} />
+					</div>
+				</div>
+				<div className="Intro_contact">
+					<a
+						href="mailto:SandunWebDev@gmail.com"
+						target="_blank"
+						rel="noopener noreferrer"
+						title="GMail"
+					>
+						<FontAwesomeIcon icon={faGoogle} className="faIcon" />
+					</a>
+					<a
+						href="https://github.com/SandunWebDev"
+						target="_blank"
+						rel="noopener noreferrer"
+						title="GitHub"
+					>
+						<FontAwesomeIcon icon={faGithub} className="faIcon" />
+					</a>
+					<a
+						href="https://www.linkedin.com/in/SandunWebDev"
+						target="_blank"
+						rel="noopener noreferrer"
+						title="LinkedIn"
+					>
+						<FontAwesomeIcon icon={faLinkedin} className="faIcon" />
+					</a>
+					<a
+						href="https://twitter.com/SandunWebDev"
+						target="_blank"
+						rel="noopener noreferrer"
+						title="Twitter"
+					>
+						<FontAwesomeIcon icon={faTwitter} className="faIcon" />
+					</a>
+				</div>
+			</div>
+		);
+	}
 }
 
 export default Intro;
