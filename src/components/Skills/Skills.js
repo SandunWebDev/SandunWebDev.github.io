@@ -33,7 +33,7 @@ class Skills extends Component {
 							<SkillCard logo={skillLogos.html} title="HTML5" />
 							<SkillCard logo={skillLogos.css} title="CSS3" />
 							<SkillCard logo={skillLogos.sass} title="SAAS" />
-							<SkillCard logo={skillLogos.bootstrap} title="BOOTSTRAP" />
+							<SkillCard logo={skillLogos.bootstrap} title="UI FRAMEWORKS" />
 
 							<SkillCard logo={skillLogos.js} title="JAVASCRIPT" />
 							<SkillCard logo={skillLogos.jquery} title="JQUERY" />
@@ -43,6 +43,7 @@ class Skills extends Component {
 								title="REACT / R.NATIVE / REDUX"
 							/>
 							<SkillCard logo={skillLogos.angular} title="ANGULAR" />
+							<SkillCard logo={skillLogos.gatsby} title="GATSBY" />
 							<SkillCard logo={skillLogos.d3} title="D3 / CHARTS" />
 							<SkillCard
 								logo={skillLogos.responsive}
@@ -62,11 +63,11 @@ class Skills extends Component {
 								title="MYSQL / POSTGRES / SQLITE"
 							/>
 							<SkillCard logo={skillLogos.sequelize} title="SEQUELIZE" />
+							<SkillCard logo={skillLogos.graphql} title="GRAPHQL" />
 							<SkillCard logo={skillLogos.auth} title="AUTHENTICATION" />
 							<SkillCard logo={skillLogos.passport} title="REST API" />
 							<SkillCard logo={skillLogos.firebase} title="FIREBASE" />
-							<SkillCard logo={skillLogos.php} title="PHP" />
-							<SkillCard logo={skillLogos.python} title="PYTHON" />
+							<SkillCard logo={skillLogos.python} title="PYTHON / PHP" />
 						</div>
 					</div>
 					<div className="Skills__category">

@@ -7,6 +7,7 @@ import React, { Component } from "react";
 import ProjectCard from "./ProjectCard/ProjectCard";
 
 // Thumbnail photos of projects
+import adhikariRetouchingThumb from "../../assets/projects/adhikariRetouching.jpg";
 import chinguCouponsThumb from "../../assets/projects/chinguCoupons.jpg";
 import cryptoMarsThumb from "../../assets/projects/cryptoMars.jpg";
 import marsMapsThumb from "../../assets/projects/marsMaps.jpg";
@@ -22,6 +23,33 @@ import "./Projects.css";
 // All My projects details. Use this info to generate each "PrjectCard".
 const myProjects = [
 	{
+		// This is just used to make alignment work nicely.
+		image: adhikariRetouchingThumb,
+		heading: "Adhikari Retouching Agency",
+		labels: [
+			"FrontEnd",
+			"Gatsby",
+			"React",
+			"GraphQL",
+			"Multiple Sourcing",
+			"Contetntful",
+			"AOS",
+			"PWA",
+			"CI / CD",
+			"Netifly",
+			"Analytics",
+			"Google Tag Manager",
+			"Photoshop",
+			"Parallax",
+			"Image Comparer",
+			"Client Uploads",
+		],
+		description:
+			"Frontend project created for Photo Retouching Agency Client. It has interactive and modern design to fastly convey the agency's services to its users. Also, this site is piped to build by sourcing multiple outside sources, like Contentful, MD, Etc... So Agency can easily update content/photos their own on those and website will be updated soon.",
+		liveLink: "https://adhikariretouching.com/",
+		codeLink: "#",
+	},
+	{
 		image: rpfPhotographyThumb,
 		heading: "Roshan Fernando Photography",
 		labels: [
@@ -36,7 +64,7 @@ const myProjects = [
 			"Custom Admin Panel",
 		],
 		description:
-			"Brand website created for a local client who specializes in photography. It has multiple pages with a simple and elegant design. Specially, The gallery page is categorized into multiple main & subsections that contain related photosets. The client can Add, Delete, Edit, Update sections, photos, etc... through custom made admin dashboard.",
+			"Brand website created for a local client who specializes in photography. It has multiple pages with a client routing. Specially, The gallery page is categorized into multiple main & subsections that contain related photosets. The client can Add, Delete, Edit, Update sections, photos, etc... through custom made admin dashboard.",
 		liveLink: "https://rfpportfolio-oct3.web.app",
 		codeLink: "#",
 	},
@@ -189,16 +217,16 @@ const myProjects = [
 		liveLink: "#",
 		codeLink: "https://github.com/SandunWebDev/SandunWebDev.github.io",
 	},
-	{
-		// This is just used to make alignment work nicely.
-		image: "",
-		heading: "",
-		labels: [],
-		description: "",
-		liveLink: "",
-		codeLink: "",
-		hidden: true,
-	},
+	// {
+	// 	// This is just used to make alignment work nicely.
+	// 	image: "",
+	// 	heading: "",
+	// 	labels: [],
+	// 	description: "",
+	// 	liveLink: "",
+	// 	codeLink: "",
+	// 	hidden: true,
+	// },
 ];
 
 class Projects extends Component {
