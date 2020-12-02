@@ -35,11 +35,12 @@
 
 /* Styles for individual label */
 .ProjectCard__labels > div {
-	font-size: 10px;
+	font-size: 11px;
 	font-weight: bold;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	color: white;
+	color: rgb(234, 234, 238);
 	background: #394855;
+	letter-spacing: 0.2px;
 	margin: 0 5px 5px 0;
 	padding: 5px 10px;
 	border-radius: 4px;

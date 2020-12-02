@@ -240,16 +240,18 @@ class Projects extends Component {
 			: "";
 
 		return (
-			<div className="Projects" id="Projects">
-				<h1 className="section__header Projects__header">PROJECTS</h1>
-				<div
-					className="Projects__cards__wrapper"
-					ref={this.ProjectWrapperDomRef}
-				>
-					{/* Generating ProjectCards */}
-					{myProjects.map((project, index) => {
-						return <ProjectCard project={project} key={index} />;
-					})}
+			<div className="Projects globalLayoutWrapper" id="Projects">
+				<div>
+					<h1 className="section__header Projects__header">PROJECTS</h1>
+					<div
+						className="Projects__cards__wrapper"
+						ref={this.ProjectWrapperDomRef}
+					>
+						{/* Generating ProjectCards */}
+						{myProjects.map((project, index) => {
+							return <ProjectCard project={project} key={index} />;
+						})}
+					</div>
 				</div>
 			</div>
 		);

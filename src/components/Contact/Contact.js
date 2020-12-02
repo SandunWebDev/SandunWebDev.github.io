@@ -26,48 +26,50 @@ class Skills extends Component {
 			: "";
 
 		return (
-			<div className="Contact" id="Contact">
-				<h1 className="section__header Contact__header">CONTACT</h1>
-				<div className="Contact__cards__wrapper">
-					<h1>
-						If you wanna get in touch, talk to me about a project or just say
-						hi, Feel free to contact me through following mediums. I look
-						forward to hearing from you.
-					</h1>
-					<img src={contactAvatar} width="300" />
-					<div className="Contact__Icons" ref={this.ContactWrapperDomRef}>
-						<a
-							href="mailto:SandunWebDev@gmail.com"
-							target="_blank"
-							rel="noopener noreferrer"
-							title="GMail"
-						>
-							<FontAwesomeIcon icon={faGoogle} className="faIcon" />
-						</a>
-						<a
-							href="https://github.com/SandunWebDev"
-							target="_blank"
-							rel="noopener noreferrer"
-							title="GitHub"
-						>
-							<FontAwesomeIcon icon={faGithub} className="faIcon" />
-						</a>
-						<a
-							href="https://www.linkedin.com/in/SandunWebDev"
-							target="_blank"
-							rel="noopener noreferrer"
-							title="LinkdIn"
-						>
-							<FontAwesomeIcon icon={faLinkedin} className="faIcon" />
-						</a>
-						<a
-							href="https://twitter.com/SandunWebDev"
-							target="_blank"
-							rel="noopener noreferrer"
-							title="Twitter"
-						>
-							<FontAwesomeIcon icon={faTwitter} className="faIcon" />
-						</a>
+			<div className="Contact globalLayoutWrapper" id="Contact">
+				<div>
+					<h1 className="section__header Contact__header">CONTACT</h1>
+					<div className="Contact__cards__wrapper">
+						<h1>
+							If you wanna get in touch, talk to me about a project or just say
+							Hi, <br /> Feel free to contact me through following mediums. I
+							look forward to hearing from you.
+						</h1>
+						<img src={contactAvatar} width="300" />
+						<div className="Contact__Icons" ref={this.ContactWrapperDomRef}>
+							<a
+								href="mailto:SandunWebDev@gmail.com"
+								target="_blank"
+								rel="noopener noreferrer"
+								title="GMail"
+							>
+								<FontAwesomeIcon icon={faGoogle} className="faIcon" />
+							</a>
+							<a
+								href="https://github.com/SandunWebDev"
+								target="_blank"
+								rel="noopener noreferrer"
+								title="GitHub"
+							>
+								<FontAwesomeIcon icon={faGithub} className="faIcon" />
+							</a>
+							<a
+								href="https://www.linkedin.com/in/SandunWebDev"
+								target="_blank"
+								rel="noopener noreferrer"
+								title="LinkdIn"
+							>
+								<FontAwesomeIcon icon={faLinkedin} className="faIcon" />
+							</a>
+							<a
+								href="https://twitter.com/SandunWebDev"
+								target="_blank"
+								rel="noopener noreferrer"
+								title="Twitter"
+							>
+								<FontAwesomeIcon icon={faTwitter} className="faIcon" />
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
