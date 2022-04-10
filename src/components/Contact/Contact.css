@@ -1,38 +1,47 @@
 .Contact {
-  background: #f46b45; /* fallback for old browsers */
-  background: linear-gradient(to bottom, #eea849, #f46b45);
-  min-height: 100vh;
-  padding: 30px;
+	background: #f46b45; /* fallback for old browsers */
+	background: linear-gradient(to bottom, #eea849, #f46b45);
+	min-height: 100vh;
+	padding: 30px;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 /* Just a wrapper for all category cards */
 .Contact__cards__wrapper {
-  font-family: "Titillium Web", cursive;
-  color: rgb(34, 34, 33);
-  text-align: center;
+	font-family: "Titillium Web", cursive;
+	color: rgb(34, 34, 33);
+	text-align: center;
+}
+
+.Contact__cards__wrapper_intro {
+	font-size: 1.4em;
+	max-width: 800px;
+	text-align: justify;
+	font-style: italic;
+	color: #22323f;
+	line-height: 1.2em;
 }
 
 .Contact__Icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
 }
 
 /* Each Contact Link & Icon */
 .Contact a {
-  color: rgb(252, 216, 209);
-  font-size: 3rem;
-  margin: 15px;
-  flex: 0 1;
+	color: rgb(252, 216, 209);
+	font-size: 3rem;
+	margin: 15px;
+	flex: 0 1;
 }
 
 .Contact a:hover {
-  color: rgb(140, 101, 245);
+	color: rgb(82 15 39);
 }

@@ -30,11 +30,29 @@ class Skills extends Component {
 				<div>
 					<h1 className="section__header Contact__header">CONTACT</h1>
 					<div className="Contact__cards__wrapper">
-						<h1>
-							If you wanna get in touch, talk to me about a project or just say
-							Hi, <br /> Feel free to contact me through following mediums. I
-							look forward to hearing from you.
-						</h1>
+						<div className="Contact__cards__wrapper_intro">
+							<p>
+								I am an experienced full-stack developer who specializes in
+								React and NodeJS, Along with competency in a wide range of web
+								development aspects including UI & API Development, DevOps,
+								Cloud Service Providers and Designing.
+							</p>
+
+							<p>
+								I am genuinely passionate about web development and like to make
+								ideas into web apps with aesthetic, interactive interfaces and
+								functional, reliable backends. Also an open-source enthusiast
+								too. I learned a lot from the open-source community and I love
+								how collaboration and knowledge sharing happened through
+								open-source.
+							</p>
+							
+							<p>
+								If you wanna get in touch, talk to me about a project or just
+								say Hi, Feel free to contact me through following mediums. I
+								look forward to hearing from you.
+							</p>
+						</div>
 						<img src={contactAvatar} width="300" />
 						<div className="Contact__Icons" ref={this.ContactWrapperDomRef}>
 							<a

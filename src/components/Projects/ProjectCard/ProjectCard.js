@@ -15,15 +15,8 @@ import "./ProjectCard.css";
 
 class ProjectCard extends Component {
 	render() {
-		const {
-			image,
-			heading,
-			labels,
-			description,
-			liveLink,
-			codeLink,
-			hidden,
-		} = this.props.project;
+		const { image, heading, labels, description, liveLink, codeLink, hidden } =
+			this.props.project;
 
 		return (
 			<div className={`ProjectCard ${hidden ? "ProjectCard-hidden" : ""}`}>
@@ -47,7 +40,9 @@ class ProjectCard extends Component {
 									</a>
 								</div>
 								<div
-									title={`${codeLink === "#" ? "Sorry. 😟 Private Code." : ""}`}
+									title={`${
+										codeLink === "#" ? "Sorry 😟 Client Project." : ""
+									}`}
 								>
 									<a
 										href={codeLink}

@@ -4,6 +4,9 @@
 
 import React, { Component } from "react";
 
+import Popup from "reactjs-popup";
+import FontAwesomeIcon from "@fortawesome/react-fontawesome";
+import faExclamationCircle from "@fortawesome/fontawesome-free-solid/faExclamationCircle";
 import ProjectCard from "./ProjectCard/ProjectCard";
 
 // Thumbnail photos of projects
@@ -16,10 +19,11 @@ import rpfPhotographyThumb from "../../assets/projects/rfpPhotography.jpg";
 import jsonPatchAPIThumb from "../../assets/projects/jsonPatchAPI.jpg";
 import mazeGameThumb from "../../assets/projects/mazeGame.jpg";
 import hbServerMonitorThumb from "../../assets/projects/hbServerMonitor.jpg";
+import wizardPassportThumb from "../../assets/projects/wizardPassport.jpg";
+import devGagThumb from "../../assets/projects/devGag.jpg";
 
 import { addPageAnimations } from "../../helpers/animations";
 import "./Projects.css";
-
 // All My projects details. Use this info to generate each "PrjectCard".
 const myProjects = [
 	{
@@ -67,6 +71,84 @@ const myProjects = [
 			"Brand website created for a local client who specializes in photography. It has multiple pages with a client routing. Specially, The gallery page is categorized into multiple main & subsections that contain related photosets. The client can Add, Delete, Edit, Update sections, photos, etc... through custom made admin dashboard.",
 		liveLink: "https://rfpportfolio-oct3.web.app",
 		codeLink: "#",
+	},
+	{
+		image: wizardPassportThumb,
+		heading: "Wizard Passport",
+		labels: [
+			"FULLSTACK",
+			"SERVERLESS LAMBDA",
+			"TYPESCRIPT",
+			"AWS",
+			"SSR",
+			"REACT",
+			"REACT LOCATION",
+			"REACT HOOK FORM",
+			"REACT QUERY",
+			"ZUSTAND",
+			"IMMER",
+			"HTML2CANVAS",
+			"SVG & IMAGE MANIPULATION",
+		],
+		description:
+			"Wizard Passport is a fully TypeScript powered Web App created around Harry Potter, Wizard Universe. It allows users to share their love for Harry Potter in a fun way with friends. This project uses new technologies introduced around react world such as React Hook Form, React Query, React Location, Zustand, Etc... along with AWS Services. Also in this project we do a lot of SVG/Canvas Manipulations and Image Conversions.",
+		liveLink: "https://wizardpassport.vercel.app/",
+		codeLink: "https://github.com/SandunWebDev/wizardPassport-frontend",
+	},
+	{
+		image: devGagThumb,
+		heading: "Dev Gag",
+		labels: [
+			"FULLSTACK",
+			"PYTHON",
+			"FLASK",
+			"JINGA2",
+			"REACT",
+			"CHAKRAUI",
+			"POSTGRESQL",
+			"SQLALCHECMY",
+			"DB MIGRATIONS",
+			"MARSHMALLOW",
+			"GUNICORN",
+			"NGINX",
+			"MYPY",
+			"PYTEST",
+			"POETRY",
+			"ISORT, BLACK, FLAKE8",
+			"DOCKER",
+		],
+		description:
+			'DevGag is a full-stack WebApp where users can explore and add "Dev Jokes". (Textual & Meme Types) It is mainly powered by Python, Flask, React & PostgreSQL. Users can explore this app without login/signup. But for leaving Like/Dislikes, posting a joke user need be login/signup. It has dark mode, infinite scrolling and ability to install as a PWA app too.',
+		liveLink: "https://devgag.herokuapp.com/",
+		codeLink: "https://github.com/SandunWebDev/devgag",
+	},
+	{
+		image: jsonPatchAPIThumb,
+		heading: "JSON Patching & Image Resizing API",
+		labels: [
+			"Backend",
+			"NodeJS",
+			"Express",
+			"CORS",
+			"WebToken",
+			"Passport",
+			"BCrypt",
+			"Husky",
+			"Unit & Integration Test",
+			"Jest",
+			"CI / CD",
+			"Docker",
+			"Travis",
+			"CodeCov",
+			"Postman",
+			"Heroku",
+			"Image Resizing",
+			"JSON Patching",
+		],
+		description:
+			"Express Server API Project that provides endpoints for JSON Patching and Image Resizing. Users first need to get an authorized token by login and use that token for other requests. The project does complete CI/CD by using multiple testings (Unit/Integration) and Docker.",
+		liveLink: "https://json-patch-api.herokuapp.com/",
+		codeLink: "https://github.com/SandunWebDev/JSON-Patch-API",
 	},
 	{
 		image: cryptoMarsThumb,
@@ -131,7 +213,7 @@ const myProjects = [
 		],
 		description:
 			"Full-stack project created to monitor websites & API endpoints. Users can signup/login and then on the dashboard add, monitor links which they need. The project does complete CI/CD by using multiple testings (Unit/Integration/E2E) and Docker/Kubernetes.  Also, This project is hosted on Google Cloud's VM Cluster.",
-		liveLink: "http://34.70.233.54/",
+		liveLink: "http://servermonitor.project.sandunwebdev.com/",
 		codeLink: "https://github.com/SandunWebDev/hackerbay-frontend",
 	},
 	{
@@ -160,34 +242,7 @@ const myProjects = [
 		liveLink: "http://chingu-coupons.herokuapp.com/",
 		codeLink: "https://github.com/chingu-voyage4/Bears-Team-4",
 	},
-	{
-		image: jsonPatchAPIThumb,
-		heading: "JSON Patching & Image Resizing API",
-		labels: [
-			"Backend",
-			"NodeJS",
-			"Express",
-			"CORS",
-			"WebToken",
-			"Passport",
-			"BCrypt",
-			"Husky",
-			"Unit & Integration Test",
-			"Jest",
-			"CI / CD",
-			"Docker",
-			"Travis",
-			"CodeCov",
-			"Postman",
-			"Heroku",
-			"Image Resizing",
-			"JSON Patching",
-		],
-		description:
-			"Express Server API Project that provides endpoints for JSON Patching and Image Resizing. Users first need to get an authorized token by login and use that token for other requests. The project does complete CI/CD by using multiple testings (Unit/Integration) and Docker.",
-		liveLink: "https://json-patch-api.herokuapp.com/",
-		codeLink: "https://github.com/SandunWebDev/JSON-Patch-API",
-	},
+
 	{
 		image: marsMapsThumb,
 		heading: "Mars Maps",
@@ -217,16 +272,16 @@ const myProjects = [
 		liveLink: "#",
 		codeLink: "https://github.com/SandunWebDev/SandunWebDev.github.io",
 	},
-	// {
-	// 	// This is just used to make alignment work nicely.
-	// 	image: "",
-	// 	heading: "",
-	// 	labels: [],
-	// 	description: "",
-	// 	liveLink: "",
-	// 	codeLink: "",
-	// 	hidden: true,
-	// },
+	{
+		// This is just used to make alignment work nicely.
+		image: "",
+		heading: "",
+		labels: [],
+		description: "",
+		liveLink: "",
+		codeLink: "",
+		hidden: true,
+	},
 ];
 
 class Projects extends Component {
@@ -243,6 +298,35 @@ class Projects extends Component {
 			<div className="Projects globalLayoutWrapper" id="Projects">
 				<div>
 					<h1 className="section__header Projects__header">PROJECTS</h1>
+
+					{/* Tooltip Notes */}
+					<div className="Projects__notes">
+						<Popup
+							trigger={(open) => (
+								<div className="Projects__notes__icon">
+									<FontAwesomeIcon
+										icon={faExclamationCircle}
+										className="faIcon"
+									/>
+								</div>
+							)}
+							position="left center"
+							on={["hover", "focus"]}
+							closeOnDocumentClick
+							contentStyle={{
+								border: "none",
+								minWidth: "400px",
+							}}
+						>
+							<div className="Projects__notes__popupContent">
+								<div>NOTE : </div>
+								Some projects that are deployed on Free Services have "Cold Boot
+								Delay". So note that the first time those live links are opened
+								they might take some time to fully start.{" "}
+							</div>
+						</Popup>
+					</div>
+
 					<div
 						className="Projects__cards__wrapper"
 						ref={this.ProjectWrapperDomRef}

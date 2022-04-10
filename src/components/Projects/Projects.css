@@ -9,6 +9,29 @@
 	min-height: 100vh;
 }
 
+/* Notes Tooltip */
+.Projects__notes {
+	display: flex;
+	justify-content: flex-end;
+	font-family: "Titillium Web", cursive;
+}
+
+.Projects__notes__icon {
+	font-size: 30px;
+	color: #42486a;
+	margin-right: 20px;
+}
+
+.Projects__notes__popupContent {
+	padding: 10px;
+	font-size: 0.9em;
+}
+
+.Projects__notes__popupContent div {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
 /* Just a wrapper for all category cards */
 .Projects__cards__wrapper {
 	display: flex;

@@ -14,7 +14,8 @@
     "react-dom": "^16.3.2",
     "react-particles-js": "^2.1.3",
     "react-scripts": "1.1.4",
-    "react-trianglify": "git+https://github.com/flexzuu/react-trianglify.git"
+    "react-trianglify": "git+https://github.com/flexzuu/react-trianglify.git",
+    "reactjs-popup": "^1.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
