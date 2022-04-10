@@ -1,12 +1,13 @@
 {
-  "main.css": "static/css/main.8cc95000.css",
-  "main.css.map": "static/css/main.8cc95000.css.map",
-  "main.js": "static/js/main.c33f8499.js",
-  "main.js.map": "static/js/main.c33f8499.js.map",
+  "main.css": "static/css/main.7fc7d758.css",
+  "main.css.map": "static/css/main.7fc7d758.css.map",
+  "main.js": "static/js/main.05859f7a.js",
+  "main.js.map": "static/js/main.05859f7a.js.map",
   "static/media/adhikariRetouching.jpg": "static/media/adhikariRetouching.54f83467.jpg",
   "static/media/chinguCoupons.jpg": "static/media/chinguCoupons.08ea6f5e.jpg",
   "static/media/contact.png": "static/media/contact.bcad987d.png",
   "static/media/cryptoMars.jpg": "static/media/cryptoMars.6a6bd318.jpg",
+  "static/media/devGag.jpg": "static/media/devGag.0884f440.jpg",
   "static/media/hbServerMonitor.jpg": "static/media/hbServerMonitor.70d41016.jpg",
   "static/media/introBackground.jpg": "static/media/introBackground.da72f59c.jpg",
   "static/media/jsonPatchAPI.jpg": "static/media/jsonPatchAPI.c5e59ef3.jpg",
@@ -16,5 +17,6 @@
   "static/media/projects_background.png": "static/media/projects_background.887215d5.png",
   "static/media/rfpPhotography.jpg": "static/media/rfpPhotography.141b46f1.jpg",
   "static/media/skill_card_background.png": "static/media/skill_card_background.9ce59f30.png",
-  "static/media/skills_background.png": "static/media/skills_background.4b66523d.png"
+  "static/media/skills_background.png": "static/media/skills_background.4b66523d.png",
+  "static/media/wizardPassport.jpg": "static/media/wizardPassport.e68e70fd.jpg"
 }
