@@ -40,9 +40,7 @@ class ProjectCard extends Component {
 									</a>
 								</div>
 								<div
-									title={`${
-										codeLink === "#" ? "Sorry 😟 Client Project." : ""
-									}`}
+									title={`${codeLink === "#" ? "Private Client Code." : ""}`}
 								>
 									<a
 										href={codeLink}

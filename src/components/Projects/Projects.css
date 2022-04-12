@@ -46,3 +46,12 @@
 	content: '';
 	flex: auto;
 } */
+
+/* ---------------------------- Media Quieries ----------------------------*/
+
+@media screen and (max-width: 736px) {
+	/* Hiding Additional Info Popup in Mobile Resolution. */
+	.Projects__notes {
+		display: none;
+	}
+}

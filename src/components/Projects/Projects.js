@@ -48,8 +48,7 @@ const myProjects = [
 			"Image Comparer",
 			"Client Uploads",
 		],
-		description:
-			"Frontend project created for Photo Retouching Agency Client. It has interactive and modern design to fastly convey the agency's services to its users. Also, this site is piped to build by sourcing multiple outside sources, like Contentful, MD, Etc... So Agency can easily update content/photos their own on those and website will be updated soon.",
+		description: `Website created for "Photo Retouching Agency" client. It has an interactive and modern design to fastly convey the agency's services to its users. Also, this site is piped to build by sourcing multiple outside sources, like Contentful, MD, Etc... So Agency can easily update content/photos their own on those and website will be updated automatically.`,
 		liveLink: "https://adhikariretouching.com/",
 		codeLink: "#",
 	},
@@ -68,7 +67,7 @@ const myProjects = [
 			"Custom Admin Panel",
 		],
 		description:
-			"Brand website created for a local client who specializes in photography. It has multiple pages with a client routing. Specially, The gallery page is categorized into multiple main & subsections that contain related photosets. The client can Add, Delete, Edit, Update sections, photos, etc... through custom made admin dashboard.",
+			"Website created for a local photography client. It has multiple pages with a client routing. Specially, the gallery page is categorized into multiple main sections & sub sections that contain related photosets. The client can Add, Delete, Edit, Update sections, photos, etc... through custom made admin dashboard.",
 		liveLink: "https://rfpportfolio-oct3.web.app",
 		codeLink: "#",
 	},
@@ -123,67 +122,6 @@ const myProjects = [
 		codeLink: "https://github.com/SandunWebDev/devgag",
 	},
 	{
-		image: jsonPatchAPIThumb,
-		heading: "JSON Patching & Image Resizing API",
-		labels: [
-			"Backend",
-			"NodeJS",
-			"Express",
-			"CORS",
-			"WebToken",
-			"Passport",
-			"BCrypt",
-			"Husky",
-			"Unit & Integration Test",
-			"Jest",
-			"CI / CD",
-			"Docker",
-			"Travis",
-			"CodeCov",
-			"Postman",
-			"Heroku",
-			"Image Resizing",
-			"JSON Patching",
-		],
-		description:
-			"Express Server API Project that provides endpoints for JSON Patching and Image Resizing. Users first need to get an authorized token by login and use that token for other requests. The project does complete CI/CD by using multiple testings (Unit/Integration) and Docker.",
-		liveLink: "https://json-patch-api.herokuapp.com/",
-		codeLink: "https://github.com/SandunWebDev/JSON-Patch-API",
-	},
-	{
-		image: cryptoMarsThumb,
-		heading: "Blockchain Crypto Mars",
-		labels: [
-			"FrontEnd",
-			"React",
-			"React Router",
-			"Semantic UI",
-			"SVG Manipulation",
-			"Illustrator",
-		],
-		description:
-			"Frontend project part created for a USA client's Etherium Blockchain backend project. It's a custom created, interactive SVG-Map related product and contains a landing page and dashboard. On the dashboard, users can view each map part's details, buy sections, etc... when connected to the backend.",
-		liveLink: "http://cryptomars.surge.sh/",
-		codeLink: "#",
-	},
-	{
-		image: mazeGameThumb,
-		heading: "Maze Game",
-		labels: [
-			"Frontend",
-			"React",
-			"React Router",
-			"Howler Audio",
-			"Docker",
-			"Docker Compose",
-			"NginX",
-		],
-		description:
-			"Simple maze game created using React. Users can specify how large of maze is needed and then move the character through arrow keys to collect mushrooms. Also, This project is completely dockerized and available on docker hub.",
-		liveLink: "https://objective-shannon-989792.netlify.com/",
-		codeLink: "https://github.com/SandunWebDev/maze-game",
-	},
-	{
 		image: hbServerMonitorThumb,
 		heading: "Server Monitor",
 		labels: [
@@ -217,6 +155,23 @@ const myProjects = [
 		codeLink: "https://github.com/SandunWebDev/hackerbay-frontend",
 	},
 	{
+		image: mazeGameThumb,
+		heading: "Maze Game",
+		labels: [
+			"Frontend",
+			"React",
+			"React Router",
+			"Howler Audio",
+			"Docker",
+			"Docker Compose",
+			"NginX",
+		],
+		description:
+			"Simple maze game created using React. Users can specify how large of maze is needed and then move the character through arrow keys to collect mushrooms. Also, This project is completely dockerized and available on docker hub.",
+		liveLink: "https://objective-shannon-989792.netlify.com/",
+		codeLink: "https://github.com/SandunWebDev/maze-game",
+	},
+	{
 		image: chinguCouponsThumb,
 		heading: "Chingu Coupon",
 		labels: [
@@ -237,10 +192,54 @@ const myProjects = [
 			"Authentication",
 			"Heroku",
 		],
+		description: `Full-stack project created by a collaboration of four developers. It contains a mockup web app of 'RetailMeNot.com' with only basic features and placeholder data. Users can signup/login, view coupons, add comments, etc... It's mainly built using MERN stack and MVC architecture.`,
+		liveLink:
+			"https://genericlambdaserver.project.sandunwebdev.com/generic/chinguCouponsProjectReroute",
+		codeLink: "https://github.com/SandunWebDev/chinguCoupons/",
+	},
+	{
+		image: cryptoMarsThumb,
+		heading: "Blockchain Crypto Mars",
+		labels: [
+			"FrontEnd",
+			"React",
+			"React Router",
+			"Semantic UI",
+			"SVG Manipulation",
+			"Illustrator",
+		],
 		description:
-			"Full-stack project created by a collaboration of three developers. It contains a mock web site of 'RetailMeNot.com' with the basic features. Users can signup/login, view coupons, add comments, submit coupons, etc... Its hosted on heroku dynos and use MVC architecture.",
-		liveLink: "http://chingu-coupons.herokuapp.com/",
-		codeLink: "https://github.com/chingu-voyage4/Bears-Team-4",
+			"Frontend project part created for a USA client's Etherium Blockchain backend project. It's a custom created, interactive SVG-Map related product and contains a landing page and dashboard. On the dashboard, users can view each map part's details, buy sections, etc... when connected to the backend.",
+		liveLink: "http://cryptomars.surge.sh/",
+		codeLink: "#",
+	},
+	{
+		image: jsonPatchAPIThumb,
+		heading: "JSON Patching & Image Resizing API",
+		labels: [
+			"Backend",
+			"NodeJS",
+			"Express",
+			"CORS",
+			"WebToken",
+			"Passport",
+			"BCrypt",
+			"Husky",
+			"Unit & Integration Test",
+			"Jest",
+			"CI / CD",
+			"Docker",
+			"Travis",
+			"CodeCov",
+			"Postman",
+			"Heroku",
+			"Image Resizing",
+			"JSON Patching",
+		],
+		description:
+			"Express Server API Project that provides endpoints for JSON Patching and Image Resizing. Users first need to get an authorized token by login and use that token for other requests. The project does complete CI/CD by using multiple testings (Unit/Integration) and Docker.",
+		liveLink: "https://json-patch-api.herokuapp.com/",
+		codeLink: "https://github.com/SandunWebDev/JSON-Patch-API",
 	},
 
 	{
@@ -255,7 +254,7 @@ const myProjects = [
 		],
 		description:
 			"Frontend project created to checkout SVG Manipulation and SemanticUI framework. Users can view mars map places with interactive SVG plain. In addition, there is more info and gallery of mars in separate pages.",
-		liveLink: "https://mapofmars.surge.sh/",
+		liveLink: "https://mapofmars.surge.sh/gallery",
 		codeLink: "https://github.com/SandunWebDev/marsMaps",
 	},
 	{
