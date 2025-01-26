@@ -1,0 +1,8 @@
+services:
+  main-portfolio:
+    build: .
+    image: main-portfolio
+    container_name: main-portfolio
+    restart: unless-stopped
+    ports:
+      - "80:80"
